@@ -29,3 +29,15 @@ C:\Program Files\Java\jre1.8.0_231
 4. Install <npm install appium> via VSCode
 5. Jangan run appium dan appium inspector, karena appium jalan sendiri dari command npm run wdio
 6. Udah jalankan npm run wdio
+
+  Set capabilities :
+  capabilities: [{
+        platformName                : "Android",
+        "appium:automationName"     : 'UiAutomator2',
+        "appium:deviceName"         : 'emulator-5554',
+        "appium:platformVersion"    : '11.0',
+        "appium:app"                : path.join(process.cwd(),'./test/apk/Diet_meal.apk'),
+        "appium:appPackage"         : "io.appium.android.apis",
+        "appium:appActivity"        : ".ApiDemos",
+        "appium:noReset"            : true,
+        "appium:forceAppLaunch"     : true,
