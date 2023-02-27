@@ -30,14 +30,17 @@ Run test
   5. Jangan run appium dan appium inspector, karena appium jalan sendiri dari command npm run wdio
   6. Udah jalankan npm run wdio
 
-  Set capabilities :
-  capabilities: [{
-        platformName                : "Android",
-        "appium:automationName"     : 'UiAutomator2',
-        "appium:deviceName"         : 'emulator-5554',
-        "appium:platformVersion"    : '11.0',
-        "appium:app"                : path.join(process.cwd(),'./test/apk/Diet_meal.apk'),
-        "appium:appPackage"         : "io.appium.android.apis",
-        "appium:appActivity"        : ".ApiDemos",
-        "appium:noReset"            : true,
-        "appium:forceAppLaunch"     : true,
+SETUP :
+1. Open Android Studio select file -> profile or debug apk 
+2. Open vysor in hp then setting developer option
+3. Open vysor in laptop
+4. Open apk info, search apk want to test "diet meal"
+5. this is for input app package (in title) and appActivity->app detail->app activity->select to up
+
+START to BULID SCRIPT :
+1. Build Scenario + element locator
+- Click & Assert data
+- Input Text in Mobile
+2. Install WDIO "npm init then npm init wdio . next yes, select on my local machine, select mocha, bable, , select spect, select wait for, select appium"
+3. Install Appium Configuration
+4. to see error = adb uninstall io.appium.uiautomator2.server
