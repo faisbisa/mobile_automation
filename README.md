@@ -18,17 +18,17 @@ Setup desired capabilities in file wdio.conf.js
 Run test
   npm run wdio
   
-  nb from Dani_A sanber :
-  mungkin yg lain bisa coba.
-1. Aku coba download dan coba setup mobil automation mas alvin
-https://github.com/alvintrianto/sanber-mobileAutomation
-2. Bikin Folder di desktop: Desktop\Workdocs\TOOL QA\Abbtools\android-sdk-windows
-3. Copas isian android sdk dari android studio dan java JRE ke folder android-sdk-windows diatas:
-C:\Users\Username\AppData\Local\Android\Sdk > android
-C:\Program Files\Java\jre1.8.0_231
-4. Install <npm install appium> via VSCode
-5. Jangan run appium dan appium inspector, karena appium jalan sendiri dari command npm run wdio
-6. Udah jalankan npm run wdio
+    nb from Dani_A sanber :
+    mungkin yg lain bisa coba.
+  1. Aku coba download dan coba setup mobil automation mas alvin
+  https://github.com/alvintrianto/sanber-mobileAutomation
+  2. Bikin Folder di desktop: Desktop\Workdocs\TOOL QA\Abbtools\android-sdk-windows
+  3. Copas isian android sdk dari android studio dan java JRE ke folder android-sdk-windows diatas:
+  C:\Users\Username\AppData\Local\Android\Sdk > android
+  C:\Program Files\Java\jre1.8.0_231
+  4. Install <npm install appium> via VSCode
+  5. Jangan run appium dan appium inspector, karena appium jalan sendiri dari command npm run wdio
+  6. Udah jalankan npm run wdio
 
   Set capabilities :
   capabilities: [{
